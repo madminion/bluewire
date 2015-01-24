@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:activatedBackgroundIndicator"
+                android:padding="@dimen/padding"
+                android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"/>
+
+    <TextView
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_picture"
+            android:layout_toEndOf="@id/profile_picture"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_picture"
+            android:layout_below="@id/handle"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/isFollower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/isFollowing"
+        android:layout_toLeftOf="@+id/followers_list"
+
+        />
+    <!--android:layout_toRightOf="@id/status"
+    android:layout_toEndOf="@id/profile_picture"
+    android:layout_below="@id/handle"-->
+
+    <TextView
+        android:id="@+id/isFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/post_followings"
+        android:layout_toLeftOf="@+id/followers_list"
+        android:textAppearance="?android:textAppearanceSmall"/>
+    <!--android:layout_toRightOf="@id/followings_list"
+android:layout_toEndOf="@id/followings_list"
+android:layout_below="@id/followings_list"-->
+<!--Button to open follower list-->
+<ImageButton
+        android:id="@+id/followers_list"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/fab_background"
+        android:src="@drawable/ic_contacts_white_18dp"
+        android:contentDescription="Open followers"
+        android:layout_below="@+id/status"
+        android:layout_toRightOf="@+id/profile_picture"
+        android:layout_toEndOf="@+id/profile_picture"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"/>
+    <!--Button to open followings list -->
+        <ImageButton
+            android:id="@+id/followings_list"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/fab_background"
+            android:src="@drawable/ic_people_white_18dp"
+            android:contentDescription="Open followings"
+            android:layout_alignTop="@+id/followers_list"
+            android:layout_toRightOf="@+id/followers_list"
+            android:layout_toEndOf="@+id/followers_list"
+            android:focusable="false"
+            android:layout_alignBottom="@+id/followers_list"
+            android:layout_marginRight="10dp"/>
+
+        <ImageButton
+            android:id="@+id/post_followings"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/fab_background"
+            android:contentDescription="Manage followings"
+            android:src="@drawable/ic_person_add_white_18dp"
+            android:layout_alignTop="@+id/followings_list"
+            android:layout_toRightOf="@+id/followings_list"
+            android:layout_toEndOf="@+id/followings_list"
+            android:focusable="false"/>
+
+</RelativeLayout>

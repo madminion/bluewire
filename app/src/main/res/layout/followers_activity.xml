@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:id="@+id/followers_list"/>
+<!--
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          class="fr.ecp.sio.superchat.FollowersFragment"
+          android:id="@+id/followers_list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:layout="@layout/followers_fragment"/>
+-->
+

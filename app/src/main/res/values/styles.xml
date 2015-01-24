@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/super_chat</item>
+        <item name="colorPrimaryDark">@color/super_chat_dark</item>
+        <item name="colorAccent">@color/super_chat</item>
+    </style>
+
+    <style name="AppTheme.DialogWhenLarge" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="colorAccent">@color/super_chat</item>
+    </style>
+
+</resources>
